@@ -3,6 +3,8 @@ API simples para listar imóveis à venda da Caixa Econômica Federal
 
 Regularly fetch all tables from Leilões da Caixa and serve it as an API.
 
+Data Source: https://venda-imoveis.caixa.gov.br/sistema/download-lista.asp
+
 Output: json data complying with the API2MAP Standard.
 
 ## The API2MAP Standard
