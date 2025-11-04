@@ -5,11 +5,16 @@ from pathlib import Path
 app = Flask(__name__)
 
 # Caminho do arquivo JSON exportado
-json_path = Path(__file__).parent / 'Output' / 'ultima_lista.json'
+json_path = Path(__file__).parent / 'Output' / 'index.json'
 
 # Carregar os dados do JSON
 with open(json_path, encoding='utf-8') as f:
     dados = json.load(f)
+
+@app.route('/', methods=['GET'])
+def home():
+    """Página inicial com informações sobre a API"""
+    return "Oi"
 
 @app.route('/imoveis', methods=['GET'])
 def get_properties():
