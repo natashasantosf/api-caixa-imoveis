@@ -20,7 +20,7 @@ def home():
 @app.route('/imoveis', methods=['GET'])
 def get_properties():
     """Retorna a lista de imóveis"""
-    return jsonify(dados)
+    return dados
 
 @app.route('/schema', methods=['GET'])
 def get_schema():
